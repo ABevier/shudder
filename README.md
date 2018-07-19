@@ -33,7 +33,7 @@ region = "us-east-1"
 sns_topic = "arn:aws:sns:us-east-1:723456455537:myapp-shutdowns"
 endpoints = ["http://127.0.0.1:5000/youaregoingtodiesoon", "http://127.0.0.1:5001/shutdown"]
 commands = [["//etc/init.d/nginx", "stop"], ["/etc/init.d/filebeats", "stop"]]
-queue_tags = {'tag1': 'value1', 'tag2': 'value2'}
+queue_tags = { tag1 = "value1", tag2 = "value2"}
 ```
 
 You can specify the config file path as an environment variable:
